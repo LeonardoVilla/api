@@ -1,0 +1,32 @@
+Para testar a API que criamos, você pode usar uma ferramenta de teste de API 
+como o Postman.
+
+Aqui estão alguns exemplos de como você pode testar cada endpoint:
+
+Para obter todos os usuários.
+http://localhost:82/api/api.php
+
+
+Para obter um usuário específico pelo ID 
+(substitua {id} pelo ID real do usuário).
+http://localhost:82/api/api.php/users?id=1
+
+
+POST Para criar um novo usuário.
+ http://localhost:82/api/api.php 
+ {"name":"Nome do Usuário", "email":"usuario@email.com"}
+
+
+PUT Para atualizar um usuário existente pelo ID 
+(substitua o número do id pelo ID real do usuário)
+http://localhost:82/api/api.php/users?id=1
+{"name":"Novo Nome", "email":"novo@email.com"}
+
+
+DELETE Para deletar um usuário pelo ID 
+(substitua o número do id pelo ID real do usuário).
+http://localhost:82/api/api.php/users?id=1
+
+Além disso, você pode usar o Postman para realizar as mesmas operações, 
+mas de forma mais visual e interativa. Basta inserir as URLs corretas e 
+configurar o método HTTP e os dados conforme necessário.
