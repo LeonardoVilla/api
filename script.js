@@ -42,6 +42,6 @@ document.getElementById('activityForm').addEventListener('submit', function(even
         }
     })
     .catch(error => {
-        alert(error.message);
+        alert(error.message+"ponho");
     });
 });
