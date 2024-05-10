@@ -9,7 +9,8 @@ $cdn = "mysql:host=$servername;dbname=$database";
 try {
     // Conexão com o banco de dados usando PDO
     $conn = new PDO($cdn, $username, $password);
-    
+
+    header('Access-Control-Allow-Origin: *');
     // Definindo o cabeçalho da resposta como JSON
     header('Content-Type: application/json');
     
