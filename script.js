@@ -15,7 +15,7 @@ document.getElementById('activityForm').addEventListener('submit', function(even
     formData.append('arquivo', arquivo);
 
     // Envia a requisição POST para a API
-    fetch('api.php', {
+    fetch('https://leonardosistema.000webhostapp.com/api.php', {
         method: 'POST',
         body: formData
     })
